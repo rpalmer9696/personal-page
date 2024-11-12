@@ -9,111 +9,113 @@ import WebsiteCard from "../components/WebsiteCard.astro";
 const developmentStart = new Date("2014-07-21");
 const developmentEnd = new Date();
 const developmentTime =
-    developmentEnd.getFullYear() - developmentStart.getFullYear();
+  developmentEnd.getFullYear() - developmentStart.getFullYear();
 ---
 
 <Layout title="Hello!">
-    <main class="w-full flex flex-col">
-        <div class="lg:p-24 py-8 px-8 flex flex-col">
-            <h2 class="text-2xl text-white/70">Hello!</h2>
-            <div class="p-2"></div>
-            <h1 class="text-5xl text-white">I'm Ryan Palmer</h1>
-            <div class="p-2"></div>
-            <h2 class="text-2xl text-white/70">SENIOR FULL STACK DEVELOPER</h2>
-            <div class="p-2"></div>
-            <div class="flex flex-row gap-4">
-                <InstagramIcon />
-                <TwitterIcon />
-                <LinkedinIcon />
-                <GithubIcon />
-            </div>
-            <div class="p-2"></div>
-            <div class="grid grid-cols-about-skill gap-4">
-                <div class="rounded-md bg-white/60 p-4">
-                    <h2 class="text-3xl">About Me</h2>
-                    <div class="p-2"></div>
-                    <p class="text-xl">
-                        Hi there! I'm Ryan, I've been a full stack developer for {
-                            developmentTime
-                        } years and I've learned a lot in that time!
-                    </p>
-                    <div class="p-4"></div>
-                    <p class="text-xl">
-                        I'm currently a Senior Developer and I'm a big fan of
-                        new technology and advancements in the web development
-                        industry.
-                    </p>
-                </div>
-                <div class="rounded-md bg-white/60 p-4">
-                    <h2 class="text-3xl">Skills</h2>
-                    <div class="p-2"></div>
-                    <div class="grid grid-cols-skill-list gap-4">
-                        <div>
-                            <h3 class="text-xl text-slate-800">Languages</h3>
-                            <ul class="list-disc pl-4">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>PHP</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-slate-800">Frameworks</h3>
-                            <ul class="list-disc pl-4">
-                                <li>React</li>
-                                <li>Next</li>
-                                <li>Svelte</li>
-                                <li>Sveltekit</li>
-                                <li>Astro</li>
-                                <li>Solid</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-slate-800">Databases</h3>
-                            <ul class="list-disc pl-4">
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>Redis</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-slate-800">Utils</h3>
-                            <ul class="list-disc pl-4">
-                                <li>TailwindCSS</li>
-                                <li>Prisma</li>
-                                <li>TRPC</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2"></div>
-            <div class="rounded-md bg-white/60 p-4">
-                <h2 class="text-3xl">My Websites</h2>
-                <div class="p-2"></div>
-                <div class="grid grid-cols-website-list gap-8">
-                    <WebsiteCard
-                        title="PokeTracker"
-                        description="A simple checklist for pokedex completion"
-                        websiteLink="https://poketracker.co.uk"
-                        githubLink="https://github.com/rpalmer9696/poketracker"
-                    />
-                    <WebsiteCard
-                        title="Zankert"
-                        description="A productivity web app for managing personal goals"
-                        websiteLink="https://zankert.com"
-                        githubLink="https://github.com/rpalmer9696/zankert"
-                    />
-                    <WebsiteCard
-                        title="Rep It Out"
-                        description="An app for tracking health and fitness progress"
-                        websiteLink="https://repitout.co.uk"
-                        githubLink="https://github.com/rpalmer9696/rep-it-out"
-                    />
-                </div>
-            </div>
+  <main class="w-full flex flex-col">
+    <div class="lg:p-24 py-8 px-8 flex flex-col">
+      <h2 class="text-2xl text-white/70">Hello!</h2>
+      <div class="p-2"></div>
+      <h1 class="text-5xl text-white">I'm Ryan Palmer</h1>
+      <div class="p-2"></div>
+      <h2 class="text-2xl text-white/70">FULL STACK DEVELOPER</h2>
+      <div class="p-2"></div>
+      <div class="flex flex-row gap-4">
+        <InstagramIcon />
+        <TwitterIcon />
+        <LinkedinIcon />
+        <GithubIcon />
+      </div>
+      <div class="p-2"></div>
+      <div class="grid grid-cols-about-skill gap-4">
+        <div class="rounded-md bg-white/60 p-4">
+          <h2 class="text-3xl">About Me</h2>
+          <div class="p-2"></div>
+          <p class="text-xl">
+            Hi there! I'm Ryan, I've been a full stack developer for {
+              developmentTime
+            } years and I've learned a lot in that time!
+          </p>
+          <div class="p-4"></div>
+          <p class="text-xl">
+            I'm currently a Lead Developer and I'm a big fan of new technology
+            and advancements in the web development industry.
+          </p>
         </div>
-    </main>
+        <div class="rounded-md bg-white/60 p-4">
+          <h2 class="text-3xl">Skills</h2>
+          <div class="p-2"></div>
+          <div class="grid grid-cols-skill-list gap-4">
+            <div>
+              <h3 class="text-xl text-slate-800">Languages</h3>
+              <ul class="list-disc pl-4">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl text-slate-800">Frameworks</h3>
+              <ul class="list-disc pl-4">
+                <li>React</li>
+                <li>Next</li>
+                <li>Svelte</li>
+                <li>Sveltekit</li>
+                <li>Astro</li>
+                <li>Solid</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl text-slate-800">Databases</h3>
+              <ul class="list-disc pl-4">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Redis</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl text-slate-800">Additional</h3>
+              <ul class="list-disc pl-4">
+                <li>TailwindCSS</li>
+                <li>Prisma</li>
+                <li>TRPC</li>
+                <li>AWS</li>
+                <li>GCP</li>
+                <li>Terraform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2"></div>
+      <div class="rounded-md bg-white/60 p-4">
+        <h2 class="text-3xl">My Websites</h2>
+        <div class="p-2"></div>
+        <div class="grid grid-cols-website-list gap-8">
+          <WebsiteCard
+            title="PokeTracker"
+            description="A simple checklist for pokedex completion"
+            websiteLink="https://poketracker.co.uk"
+            githubLink="https://github.com/rpalmer9696/poketracker"
+          />
+          <WebsiteCard
+            title="Zankert"
+            description="A productivity web app for managing personal goals"
+            websiteLink="https://zankert.com"
+            githubLink="https://github.com/rpalmer9696/zankert"
+          />
+          <WebsiteCard
+            title="Rep It Out"
+            description="An app for tracking health and fitness progress"
+            websiteLink="https://repitout.co.uk"
+            githubLink="https://github.com/rpalmer9696/rep-it-out"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
 </Layout>
